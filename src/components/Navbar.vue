@@ -13,7 +13,7 @@
           <div class="navbar-item">
             <router-link
               :to="this.buttonPath"
-              class="button is-primary is-outlined is-rounded speed-slower">
+              class="button is-primary is-outlined is-rounded">
                 {{this.buttonText}}
             </router-link>
           </div>

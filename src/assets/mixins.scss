@@ -3,5 +3,7 @@
 $primary: #8c43ff;
 $primary-invert: findColorInvert($primary);
 
+$skill-border-color: rgb(228, 233, 241);
+
 @import "~bulma";
 @import "~buefy/src/scss/buefy";

@@ -18,8 +18,8 @@
 <style lang="scss">
 @import "@/assets/mixins.scss";
 .skill-column {
-  padding: 50px 30px;
-  border: 1px solid $skill-border-color;
+  padding: 50px 30px !important;
+  border-bottom: 1px solid $skill-border-color;
 }
 .skill-header {
   margin-top: 2rem;
@@ -30,6 +30,7 @@
 .tool {
   margin-top: 0.5rem;
   border: none !important;
+  padding: 0.5rem 1rem;
 }
 @media screen and (min-width: 769px) {
   .skill-column {

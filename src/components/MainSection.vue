@@ -10,7 +10,7 @@
             <h2
               class="subtitle is-size-4-desktop"
             >I design and code simple, beautiful and useful software.</h2>
-            <img src="@/assets/avatar.svg" alt="Avatar">
+            <img src="@/assets/avatar.svg" alt="Avatar" class="avatar">
           </div>
         </div>
       </div>
@@ -24,6 +24,7 @@
 }
 .title {
   margin-bottom: 1.5rem;
+  font-size: 1.5rem;
 }
 .subtitle {
   font-family: "Open Sans", sans-serif;

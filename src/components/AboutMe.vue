@@ -27,4 +27,9 @@
 .section.is-primary {
   background-color: $primary;
 }
+@media screen and (min-width: 769px) {
+  .is-long {
+    padding-bottom: 18rem !important;
+  }
+}
 </style>

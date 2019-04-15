@@ -1,6 +1,6 @@
 <template>
   <div>
-    <navbar></navbar>
+    <navbar buttonPath="/hello" buttonText="Say Hello"></navbar>
     <main-section></main-section>
     <about-me></about-me>
     <skills-section></skills-section>

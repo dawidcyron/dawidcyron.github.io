@@ -25,7 +25,7 @@
 </template>
 
 <style lang="scss">
-@import "@/assets/mixins.scss";
+@import "@/assets/styles.scss";
 .project {
   background-color: $card-background;
 }

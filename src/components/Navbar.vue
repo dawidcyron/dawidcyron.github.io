@@ -13,7 +13,7 @@
           <div class="navbar-item">
             <router-link
               :to="this.buttonPath"
-              class="button is-primary is-outlined is-rounded">
+              class="button is-primary is-outlined is-rounded has-text-weight-semibold">
                 {{this.buttonText}}
             </router-link>
           </div>
@@ -24,7 +24,7 @@
 </template>
 
 <style lang="scss">
-@import "@/assets/mixins.scss";
+@import "@/assets/styles.scss";
 .navbar {
   padding: 1.2rem 0;
   .container {

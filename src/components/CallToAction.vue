@@ -3,7 +3,7 @@
     <div class="container is-narrow">
       <div class="box">
         <div class="columns">
-          <div class="column has-text-white title is-marginless">
+          <div class="column has-text-white title is-marginless flex">
             Let's work together
           </div>
           <div class="column has-text-white">
@@ -23,7 +23,7 @@
 </template>
 
 <style lang="scss">
-@import "@/assets/mixins.scss";
+@import "@/assets/styles.scss";
 .cta {
   .box {
     padding: 3.5rem 2rem;

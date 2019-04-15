@@ -16,7 +16,7 @@
 </template>
 
 <style lang="scss">
-@import "@/assets/mixins.scss";
+@import "@/assets/styles.scss";
 .skill-column {
   padding: 50px 30px !important;
   border-bottom: 1px solid $skill-border-color;

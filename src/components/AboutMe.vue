@@ -20,7 +20,7 @@
 </template>
 
 <style lang="scss">
-@import "@/assets/mixins.scss";
+@import "@/assets/styles.scss";
 .is-long {
   padding-bottom: 14rem !important;
 }

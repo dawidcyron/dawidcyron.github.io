@@ -30,7 +30,7 @@
 </template>
 
 <style lang="scss">
-@import "@/assets/mixins.scss";
+@import "@/assets/styles.scss";
 .projects {
   padding: 2rem 0 4rem;
 }

@@ -1,0 +1,35 @@
+@import "~bulma/sass/utilities/_all";
+
+$primary: #8c43ff;
+$primary-invert: findColorInvert($primary);
+
+$navbar-breakpoint: 0;
+
+$skill-border-color: rgb(228, 233, 241);
+
+$card-background: #293347;
+
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition-duration: 500ms;
+  transition-property: height, opacity, transform;
+  transition-timing-function: ease-in-out;
+  overflow: hidden;
+}
+
+.slide-left-enter,
+.slide-right-leave-active {
+  opacity: 0;
+  transform: translate(2em, 0);
+}
+
+.slide-left-leave-active,
+.slide-right-enter {
+  opacity: 0;
+  transform: translate(-2em, 0);
+}
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";

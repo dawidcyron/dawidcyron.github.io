@@ -20,7 +20,7 @@
           <skill-column
             title="Mobile Developer"
             description="I create mobile application using both native and hybrid technologies."
-            languages="Java, Kotlin, Dart (Flutter)"
+            languages="Java, Dart (Flutter)"
             v-bind:tools="['Android Studio', 'VS Code', 'GitHub']"/>
         </div>
       </div>

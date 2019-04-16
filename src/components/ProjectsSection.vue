@@ -16,7 +16,7 @@
       </div>
       <div class="columns is-centered">
         <div class="column">
-          <a href="https://github.com/dawidcyron" target="_bland" class="button is-outlined is-primary
+          <a href="https://github.com/dawidcyron" target="_blank" class="button is-outlined is-primary
             is-medium is-rounded">
               <span class="icon">
                 <i class="fab fa-github"></i>
@@ -48,11 +48,22 @@
 
 <script>
 import ProjectBox from '@/components/ProjectBox.vue';
+import axios from 'axios';
 
 export default {
   name: 'projects-section',
+  data() {
+    return {
+      projects: [],
+    };
+  },
   components: {
     ProjectBox,
+  },
+  created() {
+    axios.get('http://landing.dawidcyron.me').then((response) => {
+      this.projects = response.data;
+    }).catch(err => console.log(err));
   },
 };
 </script>

@@ -1,13 +1,14 @@
 <template>
   <section class="is-white hello">
     <div class="container">
-      <form @submit.prevent="submit">
+      <form @submit.prevent="sendForm">
         <div class="columns is-centered">
           <div class="column is-half">
             <div class="field">
               <label for class="label has-text-left has-text-weight-light">Name</label>
               <div class="control is-expanded">
-                <input type="text" class="input is-large has-text-weight-light is-primary" required>
+                <input type="text" class="input is-large
+                  has-text-weight-light is-primary" required v-model="name">
               </div>
             </div>
           </div>
@@ -19,6 +20,7 @@
                   type="email"
                   class="input is-large has-text-weight-light is-primary"
                   required
+                  v-model="email"
                 >
               </div>
             </div>
@@ -28,11 +30,12 @@
           <div class="column">
             <div class="field">
               <label class="label has-text-left has-text-weight-light">Message</label>
-              <div class="contorl is-expanded">
+              <div class="control is-expanded">
                 <textarea
                   class="textarea is-large has-text-weight-light is-primary"
                   rows="5"
                   required
+                  v-model="message"
                 ></textarea>
               </div>
             </div>
@@ -43,9 +46,9 @@
             <div class="field">
               <div class="control">
                 <button
-                  class="button is-primary is-outlined is-medium is-rounded is-fullwidth
-                   is-vcentered"
-                  :class="{'is-loading' : is-loading}">
+                  class="button is-primary is-medium
+                  is-rounded is-fullwidth is-vcentered"
+                  :class="{'is-loading' : isLoading}">
                   <p class="submit-text">Submit</p>
                 </button>
               </div>
@@ -78,5 +81,52 @@
   .submit-text {
     position: absolute;
   }
+  @media screen and (max-width: 768px){
+    .button {
+      margin-bottom: 5rem;
+    }
+  }
 }
 </style>
+
+<script>
+import axios from 'axios';
+
+const url = 'https://xdjtmiomh1.execute-api.eu-west-1.amazonaws.com/dev/email/send';
+
+export default {
+  name: 'hello-form',
+  data() {
+    return {
+      isLoading: false,
+      name: '',
+      email: '',
+      message: '',
+    };
+  },
+  methods: {
+    sendForm() {
+      this.isLoading = true;
+      axios.post(url, {
+        name: this.name,
+        email: this.email,
+        message: this.message,
+      }).then(() => {
+        this.isLoading = false;
+        this.$toast.open({
+          message: 'Thanks for reaching out! I\'ll get in touch with you ASAP',
+          type: 'is-success',
+        });
+      }).catch((err) => {
+        this.isLoading = false;
+        this.$toast.open({
+          duration: 2000,
+          message: err,
+          type: 'is-danger',
+          position: 'is-bottom',
+        });
+      });
+    },
+  },
+};
+</script>

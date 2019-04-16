@@ -1,5 +1,5 @@
 <template>
-  <section class="section is-medium is-white has-text-centered">
+  <section class="section is-medium is-white has-text-centered project-section">
     <div class="container is-narrow">
       <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">My Recent Projects</h1>
       <h2 class="subtitle is-size-5-desktop">Here are a few of my projects from Github.</h2>
@@ -31,6 +31,9 @@
 
 <style lang="scss">
 @import "@/assets/styles.scss";
+.project-section {
+  padding-top: 4.5rem !important;
+}
 .projects {
   padding: 2rem 0 4rem;
 }
@@ -38,16 +41,8 @@
   font-size: 1.15rem;
 }
 .button.is-primary.is-outlined {
-  background-color: transparent !important;
-  border-color: $primary !important;
-  color: $primary !important;
   transition-timing-function: ease-in-out;
   transition-duration: $speed-slower;
-}
-.button.is-primary.is-outlined:hover {
-  background-color: $primary !important;
-  border-color: transparent !important;
-  color: $white !important;
 }
 </style>
 

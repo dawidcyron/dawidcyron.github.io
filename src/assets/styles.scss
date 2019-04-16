@@ -1,13 +1,26 @@
 @import "~bulma/sass/utilities/_all";
 
 $primary: #8c43ff;
-$primary-invert: findColorInvert($primary);
+$primary-invert: $white;
 
 $navbar-breakpoint: 0;
 
 $skill-border-color: rgb(228, 233, 241);
 
 $card-background: #293347;
+
+$form-border-color: #dbdbdb;
+
+$colors: ("white": ($white, $black),
+"black": ($black, $white),
+"light": ($light, $light-invert),
+"dark": ($dark, $dark-invert),
+"primary": ($primary, $primary-invert),
+"info": ($info, $info-invert),
+"success": ($success, $success-invert),
+"warning": ($warning, $warning-invert),
+"danger": ($danger, $danger-invert),
+);
 
 .slide-left-enter-active,
 .slide-left-leave-active,
@@ -29,6 +42,10 @@ $card-background: #293347;
 .slide-right-enter {
   opacity: 0;
   transform: translate(-2em, 0);
+}
+
+.has-margin-auto {
+  margin: auto;
 }
 
 @import "~bulma";

@@ -1,7 +1,18 @@
 <template>
-  <div class="hello hero">
-    <hello-header></hello-header>
-    <hello-form></hello-form>
+  <div class="hello hero is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+      <div class="columns">
+<hello-header class="column"></hello-header>
+      </div>
+      <div class="columns">
+    <hello-form class="column"></hello-form>
+      </div>
+
+
+    </div>
+      </div>
+
   </div>
 </template>
 

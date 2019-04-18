@@ -1,11 +1,11 @@
 <template>
-  <nav class="navbar is-transparent">
+  <nav class="navbar is-transparent is-fixed-top is-top-navbar">
     <div class="container">
       <div class="navbar-brand is-marginless">
         <router-link
           to="/"
           class="navbar-item title has-text-weight-normal is-marginless">
-            Dawid Cyron
+            <img src="@/assets/logo.png" alt="">
         </router-link>
       </div>
       <div class="navbar-menu is-marginless">
@@ -40,6 +40,9 @@
   padding: 1.2rem !important;
   font-size: 1.125rem;
   border-width: 2px !important;
+}
+.is-top-navbar {
+  position: absolute !important;
 }
 </style>
 

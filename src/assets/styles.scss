@@ -3,6 +3,8 @@
 $primary: #8c43ff;
 $primary-invert: $white;
 
+$transparent: rgba(0, 0, 0, 0);
+
 $navbar-breakpoint: 0;
 
 $skill-border-color: rgb(228, 233, 241);
@@ -20,6 +22,7 @@ $colors: ("white": ($white, $black),
 "success": ($success, $success-invert),
 "warning": ($warning, $warning-invert),
 "danger": ($danger, $danger-invert),
+"transparent": ($transparent, $transparent),
 );
 
 .slide-left-enter-active,

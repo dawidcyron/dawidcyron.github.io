@@ -81,11 +81,7 @@
   .submit-text {
     position: absolute;
   }
-  @media screen and (max-width: 768px){
-    .button {
-      margin-bottom: 5rem;
-    }
-  }
+
 }
 </style>
 
@@ -116,6 +112,7 @@ export default {
         this.$toast.open({
           message: 'Thanks for reaching out! I\'ll get in touch with you ASAP',
           type: 'is-success',
+          position: 'is-bottom',
         });
       }).catch((err) => {
         this.isLoading = false;

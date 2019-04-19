@@ -61,7 +61,7 @@ export default {
     ProjectBox,
   },
   created() {
-    axios.get('http://landing.dawidcyron.me').then((response) => {
+    axios.get('https://landing.dawidcyron.me').then((response) => {
       this.projects = response.data;
     }).catch(err => console.log(err));
   },

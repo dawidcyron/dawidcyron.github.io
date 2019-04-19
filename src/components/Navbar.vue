@@ -5,7 +5,7 @@
         <router-link
           to="/"
           class="navbar-item title has-text-weight-normal is-marginless">
-            <img src="@/assets/logo.png" alt="">
+            <img src="@/assets/logo.svg" alt="">
         </router-link>
       </div>
       <div class="navbar-menu is-marginless">

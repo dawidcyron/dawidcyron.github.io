@@ -5,7 +5,7 @@
       <h2 class="subtitle is-size-5-desktop">Here are a few of my projects from Github.</h2>
       <div class="projects">
         <div class="columns is-multiline is-mobile">
-          <div class="column is-12-mobile is-half-tablet is-one-third desktop"
+          <div class="column is-full-mobile is-half-tablet is-one-third-desktop"
            v-for="project in projects" v-bind:key="project">
             <project-box :name="project.name"
             :description="project.description"

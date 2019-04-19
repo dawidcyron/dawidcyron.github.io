@@ -12,7 +12,7 @@
           <p>View Source</p>
         </a>
       </div>
-      <div>
+      <div class="column subtitle has-text-white">
         <a :href="'http://' + this.name + '/dawidcyron.me'">
           <span class="icon">
             <i class="fas fa-desktop"></i>
@@ -27,7 +27,7 @@
 <style lang="scss">
 @import "@/assets/styles.scss";
 .project {
-  background-color: $card-background;
+  background-color: $card-background !important;
 }
 </style>
 

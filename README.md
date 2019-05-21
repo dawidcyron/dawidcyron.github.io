@@ -1,34 +1,12 @@
-# portfolio-website
+<p aligh="middle"><img src="./src/assets/logo.png" width="200px"></p>
 
-## Project setup
-```
-npm install
-```
+<h1 style="text-align: center" alighn="middle">Portfolio Website</h1>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+<h4 style="text-align: center" align="middle">My personal website hosted on Netlify. <br>Available at
+    <a href="https://dawidcyron.me">htts://dawidcyron.me</a></h4><br>
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Technologies used
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* JavaScript
+* Vue
+* Sass

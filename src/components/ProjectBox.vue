@@ -2,7 +2,7 @@
   <div class="box project is-one-third">
     <h1 class="title has-text-white is-spaced">{{this.name}}</h1>
     <h2 class="subtitle has-text-white">{{this.description}}</h2>
-    <h2 class="subtitle has-text-white">Language:{{this.language}}</h2>
+    <h2 class="subtitle has-text-white">Language: {{this.language}}</h2>
     <div class="columns">
       <div class="column subtitle has-text-white">
         <a :href="this.html_url" target="_blank" class="has-text-white">
@@ -12,8 +12,8 @@
           <p>View Source</p>
         </a>
       </div>
-      <div>
-        <a :href="'http://' + this.name + '/dawidcyron.me'">
+      <div class="column subtitle has-text-white" v-if="this.live_url != null">
+        <a :href="this.live_url" target="_blank" class="has-text-white">
           <span class="icon">
             <i class="fas fa-desktop"></i>
           </span>
@@ -27,7 +27,7 @@
 <style lang="scss">
 @import "@/assets/styles.scss";
 .project {
-  background-color: $card-background;
+  background-color: $card-background !important;
 }
 </style>
 
@@ -39,6 +39,7 @@ export default {
     name: String,
     description: String,
     language: String,
+    live_url: String,
   },
 };
 </script>

@@ -5,12 +5,13 @@
       <h2 class="subtitle is-size-5-desktop">Here are a few of my projects from Github.</h2>
       <div class="projects">
         <div class="columns is-multiline is-mobile">
-          <div class="column is-12-mobile is-half-tablet is-one-third desktop"
+          <div class="column is-full-mobile is-half-tablet is-one-third-desktop"
            v-for="project in projects" v-bind:key="project">
             <project-box :name="project.name"
             :description="project.description"
             :html_url="project.html_url"
-            :language="project.language" />
+            :language="project.language"
+            :live_url="project.live_url" />
           </div>
         </div>
       </div>
@@ -61,7 +62,7 @@ export default {
     ProjectBox,
   },
   created() {
-    axios.get('http://landing.dawidcyron.me').then((response) => {
+    axios.get('https://landing.dawidcyron.me').then((response) => {
       this.projects = response.data;
     }).catch(err => console.log(err));
   },

@@ -10,7 +10,8 @@
             <project-box :name="project.name"
             :description="project.description"
             :html_url="project.html_url"
-            :language="project.language" />
+            :language="project.language"
+            :live_url="project.live_url" />
           </div>
         </div>
       </div>

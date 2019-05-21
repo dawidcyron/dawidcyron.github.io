@@ -12,8 +12,8 @@
           <p>View Source</p>
         </a>
       </div>
-      <div class="column subtitle has-text-white">
-        <a :href="'http://' + this.name + '/dawidcyron.me'" target="_blank" class="has-text-white">
+      <div class="column subtitle has-text-white" v-if="this.live_url != null">
+        <a :href="this.live_url" target="_blank" class="has-text-white">
           <span class="icon">
             <i class="fas fa-desktop"></i>
           </span>
@@ -39,6 +39,7 @@ export default {
     name: String,
     description: String,
     language: String,
+    live_url: String,
   },
 };
 </script>
